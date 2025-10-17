@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <article data-testid="test-profile-card" class="profile-card">
+            <header class="profile-header">
+                <figure class="avatar-container">
+                    <img data-testid="test-user-avatar" 
+                         src="Teminiolwa.jpg" 
+                         alt="Teminiolwa's profile picture" 
+                         class="avatar">
+                </figure>
+                <div class="profile-info">
+                    <h1 data-testid="test-user-name" class="user-name">Teminiolwa</h1>
+                    <p data-testid="test-user-bio" class="user-bio">
+                        Full-stack developer passionate about creating accessible web experiences. 
+                        I love solving complex problems and building user-friendly applications.
+                    </p>
+                    <div data-testid="test-user-time" class="user-time"></div>
+                </div>
+            </header>
+
+            <nav data-testid="test-user-social-links" class="social-links">
+                <ul>
+                    <li>
+                        <a data-testid="test-user-social-twitter" 
+                           href="https://twitter.com/" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a data-testid="test-user-social-github" 
+                           href="https://github.com/temake" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a data-testid="test-user-social-linkedin" 
+                           href="https://www.linkedin.com/in/teminioluwa-adekoya-6537a2294" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="profile-section">
+                <h2>Hobbies</h2>
+                <ul data-testid="test-user-hobbies" class="hobbies-list">
+                    <li>Coding</li>
+                    <li>Reading tech blogs</li>
+                    <li>Playing guitar</li>
+                    <li>Photography</li>
+                </ul>
+            </section>
+
+            <section class="profile-section">
+                <h2>Dislikes</h2>
+                <ul data-testid="test-user-dislikes" class="dislikes-list">
+                    <li>Poor documentation</li>
+                    <li>Disappointment</li>
+                    <li>Meetings without agenda</li>
+                    <li>Slow internet</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <script>
+        
+        function updateTime() {
+            const timeElement = document.querySelector('[data-testid="test-user-time"]');
+            timeElement.textContent = Date.now();
+        }
+        
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
