@@ -26,8 +26,35 @@ main {
     padding: 24px;
     margin: 20px auto;
 }
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+.nav-link {
+    text-decoration: none;
+    color: black;
+    background-color: #e0e0e0;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 100px;
+}
 
-/* Profile Header */
+.nav-link:hover {
+    background-color: #d0d0d0;
+    transform: translateY(-1px);
+}
+
+.nav-link:focus {
+    outline: 2px solid #085be1;
+    outline-offset: 2px;
+}
 .profile-header {
     display: flex;
     flex-direction: column;
@@ -149,6 +176,10 @@ main {
         text-align: left;
         align-items: flex-start;
     }
+    .navigation {
+        gap: 20px;
+        justify-content: center;
+    }
     
     .avatar-container {
         margin-right: 24px;
@@ -174,6 +205,10 @@ main {
     .avatar {
         width: 150px;
         height: 150px;
+    }
+    .navigation {
+        gap: 24px;
+        justify-content: flex-end;
     }
     
     .user-name {
