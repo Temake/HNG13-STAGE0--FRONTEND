@@ -55,6 +55,11 @@ main {
     outline: 2px solid #085be1;
     outline-offset: 2px;
 }
+
+.nav-link.active {
+    background-color: #085be1;
+    color: white;
+}
 .profile-header {
     display: flex;
     flex-direction: column;
@@ -242,5 +247,284 @@ main {
         background: transparent;
         color: #333;
         border: 1px solid #333;
+    }
+}
+
+/* Page Header Styles */
+.page-header {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #085be1;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact Form Styles */
+.contact-form-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 16px;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #085be1;
+    box-shadow: 0 0 0 3px rgba(8, 91, 225, 0.1);
+}
+
+.form-group input.error,
+.form-group textarea.error {
+    border-color: #f44336;
+    box-shadow: 0 0 0 3px rgba(244, 67, 54, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.error-message {
+    color: #f44336;
+    font-size: 0.875rem;
+    margin-top: 4px;
+    display: none;
+    font-weight: 500;
+}
+
+.submit-button {
+    background-color: #085be1;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center;
+    min-width: 160px;
+}
+
+.submit-button:hover {
+    background-color: #0747b8;
+    transform: translateY(-2px);
+}
+
+.submit-button:focus {
+    outline: 2px solid #085be1;
+    outline-offset: 2px;
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 16px;
+    display: none;
+}
+
+/* About Page Styles */
+.about-section {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.about-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.about-section h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #085be1;
+    padding-bottom: 8px;
+}
+
+.about-section h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.about-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* Goals List */
+.goals-list {
+    list-style: none;
+    display: grid;
+    gap: 20px;
+}
+
+.goals-list li {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #085be1;
+}
+
+.goals-list h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #085be1;
+}
+
+.goals-list p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+/* Confidence Areas */
+.confidence-areas {
+    display: grid;
+    gap: 20px;
+}
+
+.confidence-item {
+    background-color: #fff3cd;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #ffc107;
+}
+
+.confidence-item h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #856404;
+}
+
+.confidence-item p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    color: #6c5ce7;
+}
+
+/* Future Note */
+.future-note {
+    background-color: #e8f5e8;
+    padding: 24px;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+    font-style: italic;
+}
+
+.future-note p {
+    margin-bottom: 12px;
+}
+
+.future-note p:last-child {
+    margin-bottom: 0;
+}
+
+/* Extra Thoughts */
+.extra-thoughts {
+    display: grid;
+    gap: 20px;
+}
+
+.extra-thoughts h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #085be1;
+}
+
+.extra-thoughts p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+/* Responsive Design for New Pages */
+@media (min-width: 768px) {
+    .page-header h1 {
+        font-size: 3rem;
+    }
+    
+    .goals-list {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .confidence-areas {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .extra-thoughts {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-form-section {
+        max-width: 700px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 14px 18px;
+        font-size: 1.1rem;
+    }
+    
+    .submit-button {
+        padding: 16px 40px;
+        font-size: 1.2rem;
     }
 }
